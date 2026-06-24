@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 
 import { useTheme } from "next-themes";
-import { SunIcon, MoonIcon, Sun } from "lucide-react";
 
 import {
   DropdownMenu,
@@ -14,6 +13,7 @@ import {
   DropdownMenuCheckboxItem,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import { MoonIcon, Sun, SunIcon } from "lucide-react";
 
 function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
