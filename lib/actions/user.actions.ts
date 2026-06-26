@@ -65,7 +65,11 @@ export async function signUpUser(prevStat: unknown, formData: FormData) {
     if (isRedirectError(error)) {
       throw error;
     }
+    console.log(error);
 
-    return { success: false, message: "Etwas ist schiefgegangen." };
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : String(error),
+    };
   }
 }
