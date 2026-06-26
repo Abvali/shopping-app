@@ -32,17 +32,11 @@ function ThemeToggle() {
             variant="ghost"
             className="focus-visible:ring-0 focus-visible:rind-offset-0"
           >
-            {theme === "system" ? (
-              <Sun />
-            ) : theme === "dark" ? (
-              <MoonIcon />
-            ) : (
-              <SunIcon />
-            )}
+            {theme === "light" ? <Sun /> : <MoonIcon />}
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuLabel>show</DropdownMenuLabel>
+          <DropdownMenuLabel></DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuCheckboxItem
             checked={theme === "system"}

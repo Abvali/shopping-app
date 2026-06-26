@@ -1,16 +1,16 @@
-import { z } from "zod";
+// import { z } from "zod";
 
-export const ProductSchema = z.object({
-  name: z.string(),
-  slug: z.string(),
-  category: z.string(),
-  description: z.string(),
-  image: z.string(),
-  price: z.number().nonnegative(),
-  brand: z.string(),
-});
+// export const ProductSchema = z.object({
+//   name: z.string(),
+//   slug: z.string(),
+//   category: z.string(),
+//   description: z.string(),
+//   image: z.string(),
+//   price: z.number().nonnegative(),
+//   brand: z.string(),
+// });
 
-type Product = z.infer<typeof ProductSchema>;
+// type Product = z.infer<typeof ProductSchema>;
 
 const data = {
   products: [
